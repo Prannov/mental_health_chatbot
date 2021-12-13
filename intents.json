@@ -1,0 +1,68 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day"],
+         "responses": ["Hello, thanks for asking", "Good to see you again", "Hi there, how can I help?"],
+         "context": [""]
+        },
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+         "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
+         "context": [""]
+        },
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+         "responses": ["Happy to help!", "Any time!", "My pleasure"],
+         "context": [""]
+        },
+        {"tag": "noanswer",
+         "patterns": [],
+         "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
+         "context": [""]
+        },
+        {"tag": "options",
+         "patterns": ["How you could help me?", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered"],
+         "responses": ["I can ask you few questions and predict your mental health... \n1.Scary Things\n2.Relaxations\n3.Your worthiness\n4. Life\n5.Situations\n6.Panic attacks\n7. Work Life", "What questions should I ask you regarding your mental health? \n1. Life\n2.Situations\n3.Panic attacks\n4. Work Life\n5.Scary Things\n6.Relaxations\n7.Your worthiness"],
+         "context": [""]
+        },
+        {"tag": "life",
+         "patterns": ["Ask me few questions on life?", "Question me on life", "You can take my survey on life"],
+         "responses": ["Did you feel your life meaningless anytime?"],
+         "context": [""]
+        },
+        {"tag": "scary_things",
+         "patterns": ["Ask me few questions on scary things?", "Question me on scary things", "You can take my survey on scary things", "scary things"],
+         "responses": ["Did you feel scared without any good reason often?"],
+         "context": [""]
+        },
+        {"tag": "situations",
+         "patterns": ["Ask me few questions on situations?", "Question me on situations", "You can take my survey on situations", "situations"],
+         "responses": ["Did you tend to over-react to situations frequently?"],
+         "context": [""]
+        },
+        {"tag": "panic_attacks",
+         "patterns": ["Ask me few questions on panic attacks?", "Question me on panic attacks", "You can take my survey on panic attacks", "Panic Attacks"],
+         "responses": ["How much do you rate yourself from 0-5 on getting panic attacks?"],
+         "context": [""]
+        },
+        {"tag": "pharmacy_search",
+         "patterns": ["Find me a pharmacy", "Find pharmacy", "List of pharmacies nearby", "Locate pharmacy", "Search pharmacy" ],
+         "responses": ["Please provide pharmacy name"],
+         "context": ["search_pharmacy_by_name"]
+        },
+        {"tag": "relax",
+         "patterns": ["Relaxations"],
+         "responses": ["Did you find it difficult to relax during work?"],
+         "context": [""]
+        },
+        {"tag": "initiate",
+         "patterns": ["Trouble with initiating to work", "Hard to start to work"],
+         "responses": ["Is it hard to work up the initiative to do things?"],
+         "context": ["search_hospital_by_params"]
+        },
+        {"tag": "worthiness",
+         "patterns": ["Worthiness", "Ask me about my worthiness"],
+         "responses": ["Did you feel not worth enough as a person?"],
+         "context": ["search_hospital_by_type"]
+        }
+   ]
+}
